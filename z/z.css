@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+* { box-sizing: border-box; }
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+  background-color: #333;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+}
+a {
+  color: #fff;
+}
+
+nav.menu {
+  list-style-type: none;
+  margin: 30px;
+}
+nav.menu li {
+  padding: 7px;
+}
+nav.menu .chapter {
+  background: #444;
+  margin: 10px 0;
+}
+
+#tip {
+  background: #fff;
+  color: #222;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 3px;
+  right: 3px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+}
+#tip:hover {
+  background: red;
+}
+
+#ignore-this {
+  text-align: center;
+  width: 390px;
+  margin: 10px auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4,90px);
+  grid-auto-rows: 90px;
+}
+
+#ignore-this>* {
+  border: 1px solid #888;
+  margin: 0;
+  display: flex;
+  align-items: center; /* align vertical */
+  padding: 5px;
+}

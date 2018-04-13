@@ -1,0 +1,8 @@
+.mygrid {
+  display: grid;
+  /* grid gap and template columns and rows */
+}
+
+.mygrid div {
+  border: 1px solid yellow;
+}

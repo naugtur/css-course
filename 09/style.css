@@ -1,0 +1,29 @@
+.mygrid {
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.mygrid:hover {
+    opacity: 0.2;
+}
+
+.mygrid>* {
+    border: 1px dashed yellow;
+}
+
+header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
