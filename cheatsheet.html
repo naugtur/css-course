@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>dictionary</title>
+  <link rel="stylesheet" href="./z/z.css" />
+  <style>
+    code {
+      display: block;
+    }
+
+    strong {
+      font-size: 1.2em;
+      line-height: 2em;
+    }
+  </style>
+</head>
+
+<body id="cheatsheet">
+<h1>Quick reference</h1>
+
+
+  <h2> basic selectors </h2>
+  <div> <strong> tagname </strong> <em> find all tags of this kind </em>
+    <pre>div {}</pre>
+  </div>
+  <div> <strong> #idtext </strong> <em> find all tags with attribute id="idtext" </em>
+    <pre>#menu {}</pre>
+
+  </div>
+  <div> <strong> .classname </strong> <em> find all tags with attribute class containing the "classname" </em>
+    <pre>.thumbnail {}</pre>
+
+  </div>
+
+  <h2> mixing selectors for one element </h2>
+  <div> <strong> tagname.classname </strong> <em> find all tags by tagname that also have the class "classname" </em>
+    <pre>div.thumbnail {}</pre>
+
+  </div>
+  <div> <strong> .classname1.classname2 </strong> <em> find all tags that have both classes </em>
+    <pre>.thumbnail.highlighted {}</pre>
+
+  </div>
+
+  <h2> mixing selectors for digging deeper </h2>
+  <div> <strong> selector1 selector2 </strong> <em> find all elements matching selector2 that are inside any element matching selector1 (at any depth)</em>
+    <pre>.navigation li {}
+div.menu img</pre>
+
+  </div>
+  <div> <strong> selector1>selector2 </strong> <em> find all elements matching selector2 that are right inside any element matching selector1 </em>
+    <pre>ul>li {}
+div.thumbnail>img</pre>
+  </div>
+
+
+  <h2> colors in CSS </h2>
+  <ul>
+    <li> <strong> transparent </strong> <em> colorless, invisible </em>
+    </li>
+    <li> <strong> black </strong> <em> color name </em>
+    </li>
+    <li> <strong> #000 </strong> RGB <em> one character </em>
+    </li>
+    <li> <strong> #000000 </strong> <em> RGB (normal) </em>
+    </li>
+    <li> <strong> rgb(0,0,0) </strong> <em> RGB numbers, 0-255 </em>
+    </li>
+    <li> <strong> rgba(0,0,0,1) </strong> <em> RGB plus alpha channel number 0-1 0 = transparent 1 = opaque 0.7 = transparent enough ;) </em>
+    </li>
+  </ul>
+  <h2> basic units </h2>
+    <ul>
+
+      <li> <strong> px </strong> <em> pixels </em>
+      </li>
+      <li> <strong>% </strong> <em> percentage (of wrapper size or font size) </em>
+      </li>
+      <li> <strong> vw </strong> <em> size relative to the width of element </em>
+      </li>
+      <li> <strong> vh </strong> <em> size relative to the height of element </em>
+      </li>
+      <li> <strong> em </strong> <em> size relative to the current font size </em>
+      </li>
+      <li> <strong> rem </strong> <em> size relative to the font size set globally on the page </em>
+      </li>
+
+    </ul>
+  <h2> simple style for appearance </h2>
+
+  <div> <strong> color </strong> <em> font color </em>
+    <code> color: #FFFFFF; </code>
+  </div>
+
+  <div> <strong> font-family </strong> <em> font </em>
+    <code> font-family: "any font name", sans-serif; </code>
+  </div>
+
+  <div> <strong> font-weight </strong> <em> font weight </em>
+    <code> font-weight: bold; // bold </code>
+    <code> font-weight: normal; // plain </code>
+    <code> font-weight: 300; // can be given numerically, useful for google fonts </code>
+  </div>
+
+
+  <div> <strong> font-size </strong> <em> font size </em>
+    <code> font-size: 12px; </code>
+    <code> font-size: 50%; </code>
+    <code> font-size: 0.5em; </code>
+    <code> font-size: 12pt; </code>
+  </div>
+
+  <div> <strong> text-decoration </strong> <em> underline etc. </em>
+    <code> text-decoration: none; //no underline </code>
+    <code> text-decoration: underline; </code>
+  </div>
+
+  <div> <strong> background-color </strong> <em> background color </em>
+    <code> background-color: #FFFFFF; </code>
+  </div>
+
+  <div> <strong> background </strong> <em> definition of the background (color, image gradients) </em>
+    <code> background: transparent url('tlo.png') no-repeat center; </code>
+    <code> background: #ad4f56 url('tlo.png') no-repeat top left; </code>
+    <code> background: transparent url('tlo.png') repeat-x bottom; </code>
+  </div>
+
+  <div> <strong> background-image </strong> <em> definition of the image. You can change the image without altering the other settings made before </em>
+    <code> background-image: url('tlo.png') </code>
+  </div>
+
+  <div> <strong> border </strong> <em> sets border for an element </em>
+    <code> border: 1px solid red; </code>
+    <code> border: 3px dashed #000000; </code>
+    <code> border-top: 2px solid #ccc; </code>
+  </div>
+
+  <h2> layout definition </h2>
+
+  <div> <strong> display </strong> <em> the treatment of the item on screen </em>
+    <code> display: block; </code>
+    <code> display: inline; </code>
+    <code> display: none; </code>
+  </div>
+
+  <div> <strong> Margin </strong> <em> margins on an item, auto for the right and left is centered </em>
+    <code> margin: 2px 3px 4px 5px; </code>
+    <code> margin: 10px 30px; </code>
+    <code> margin: 20px; </code>
+    <code> margin: 0 auto; //centered</code>
+  </div>
+
+  <div> <strong> padding </strong> <em> think of it as an inner margin defined as the margin but without the auto option</em>
+  </div>
+
+  <div> <strong> width </strong> <em> width </em>
+  </div>
+  <div> <strong> min-width </strong> <em> minimum width of the elastic element </em>
+  </div>
+  <div> <strong> max-width </strong> <em> the maximum width of the elastic element </em>
+  </div>
+  <div> <strong> height </strong> <em> height </em>
+  </div>
+  <div> <strong> min-height </strong> <em> the minimum height of the elastic element </em>
+  </div>
+  <div> <strong> max-height </strong> <em> maximum elastic element </em>
+  </div>
+
+  <div> <strong> float </strong> <em> "wrap stuff around me" </em>
+    <code> float: left; </code>
+    <code> float: right; </code>
+  </div>
+
+  <div> <strong> clear </strong> <em> I don't want to wrap around anything </em>
+    <code> clear: left; </code>
+    <code> clear: right; </code>
+    <code> clear: both; </code>
+  </div>
+
+  <div> <strong> overflow </strong> <em> what to do with content when it's too long</em>
+    <code> overflow: hidden; </code>
+    <code> overflow: visible; </code>
+    <code> overflow: auto; </code>
+  </div>
+
+  <div> <strong> grid </strong> <em> grid layout definition </em>
+    <pre>
+.grid-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px 500px;
+  grid-template-areas: "alice alice"
+                       "bob jim"
+}
+
+.something {
+  grid-area: alice;
+}
+    </pre>
+  </div>
+
+
+  <h2> Stuff not meant to be used for layouts </h2>
+
+  <div> <strong> position </strong> <em> method of calculating the position of the item </em>
+    <code> position: static; // default. "Revert to normal layout" </code>
+    <code> position: absolute; // Rips the element out of the document and puts on top of it - you can now set coordinates. Creates a new coordinates system for elements inside </code>
+    <code> position: fixed; //Same as absolute, but relative to the screen layout (does not move when user scrolls) </code>
+    <code> position: relative; //Moves element based on it's initial position. Creates a new coordinates system for elements inside </code>
+  </div>
+
+  <div> <strong> top bottom left right </strong> <em> set position </em>
+    <p>
+      <code> top: 10px; </code>
+      <code> left: 10px; </code>
+    </p>
+    <p>
+      <code> bottom: 100px; </code>
+      <code> right: 20% </code>
+    </p>
+  </div>
+
+
+
+</body>
+
+</html>
