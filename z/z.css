@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
 * { box-sizing: border-box; }
+
 html,
 body {
-    min-height: 100%;
+    height: 100%;
 }
 
 body {
+  margin: 0;
+  padding-top: 10px;
   background-color: #333;
   background-position: top center;
   background-repeat: no-repeat;
@@ -16,11 +19,15 @@ body {
 }
 a {
   color: #fff;
+  text-decoration-color: #777;
+ 
+  
 }
 
 nav.menu {
   list-style-type: none;
   margin: 30px;
+  font-size: 16px;
 }
 nav.menu li {
   padding: 7px;
@@ -42,11 +49,14 @@ nav.menu .chapter {
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
+  transition: transform 1s ease-in;
 }
 #tip:hover {
-  background: red;
+  transform: scale(10,10);
 }
-
+body.tipped * {
+  opacity: 0.5;
+}
 #ignore-this {
   text-align: center;
   width: 390px;
@@ -57,7 +67,7 @@ nav.menu .chapter {
   grid-auto-rows: 90px;
 }
 
-#ignore-this>* {
+#ignore-this * {
   border: 1px solid #888;
   margin: 0;
   display: flex;

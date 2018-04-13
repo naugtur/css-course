@@ -4,10 +4,6 @@
     grid-gap: 10px;
 }
 
-.mygrid:hover {
-    opacity: 0.2;
-}
-
 .mygrid>* {
     border: 1px dashed yellow;
 }

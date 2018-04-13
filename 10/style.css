@@ -3,10 +3,6 @@
     display: grid;
 }
 
-.mygrid:hover {
-    opacity: 0.2;
-}
-
 .mygrid>* {
     border: 1px dashed yellow;
 }
