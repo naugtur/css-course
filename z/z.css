@@ -4,12 +4,11 @@
 
 html,
 body {
-    height: 100%;
+    min-height: 600px;
 }
 
 body {
   margin: 0;
-  padding-top: 10px;
   background-color: #333;
   background-position: top center;
   background-repeat: no-repeat;
@@ -82,16 +81,6 @@ body.tipped * {
   padding: 10px;
 }
 #cheatsheet>div {
-  padding: 10px 20px;
+  padding: 12px;
   border-bottom: 1px solid #777;
-}
-
-.goback {
-  position: fixed;
-  top: 3px;
-  left: 3px;
-  cursor: pointer;
-  border: 1px solid #777;
-  padding: 3px;
-  
 }
