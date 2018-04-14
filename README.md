@@ -2,4 +2,4 @@
 
 A set of quick exercises to experience what CSS is first hand.
 
-Open index.html in the browser and see where it gets you.
+Click "Show" button above to start
